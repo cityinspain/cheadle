@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.green-letters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-area-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  letter-spacing: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yellow-letter-textarea {
+  flex: 1;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gray-letter-textarea {
+  flex: 1;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.green-letter-field {
+  margin: 2px;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  flex: 1;
+  max-width: 40px;
+  height: 40px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+}
+
+.focused {
+  border: 3px solid black;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.word-list {
+  list-style: none;
+}
+
+.word-list li {
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+.word-list-container {
+  height: 100vh;
+  overflow-y: scroll;
+  flex: 1;
 }
