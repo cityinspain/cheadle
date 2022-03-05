@@ -5,12 +5,51 @@
   margin: 25px;
 }
 
+.green-letter-wrapper {
+}
+
+.positioned-yellow-letters-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  margin-top: 0px;
+  flex: 1;
+  width: 100%;
+}
+
+.positioned-yellow-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+.positioned-yellow-letter-field {
+  margin: 2px;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  flex: 1;
+  max-width: 40px;
+  height: 40px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+}
+
 .text-area-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 25px;
+  margin-top: 0px;
 }
 
 textarea {
@@ -20,10 +59,13 @@ textarea {
 .yellow-letter-textarea {
   flex: 1;
   border: 2px solid rgba(128, 128, 128, 0.8);
-  font-size: 28px;
+  font-size: 32px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+}
+
+textarea {
 }
 
 .gray-letter-textarea {
@@ -58,6 +100,15 @@ textarea {
 .container {
   display: flex;
   align-items: flex-start;
+  background: #121213;
+  color: white;
+}
+
+textarea,
+input {
+  background: transparent;
+  color: white;
+  resize: none;
 }
 
 .word-list {
@@ -75,4 +126,13 @@ textarea {
   height: 100vh;
   overflow-y: scroll;
   flex: 1;
+}
+
+.reset-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-button-container button {
+  font-size: 24px;
 }
