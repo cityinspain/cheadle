@@ -19,13 +19,13 @@ import { wordList } from "./words";
 
 // TODO: clear button
 
-const hasAllDistinctCharacters = (text: string | string[]) => {
-  if (typeof text === "string") {
-    return !text.split("").some((v, i, a) => a.lastIndexOf(v) !== i);
-  } else {
-    return !text.some((v, i, a) => a.lastIndexOf(v) !== i);
-  }
-};
+// const hasAllDistinctCharacters = (text: string | string[]) => {
+//   if (typeof text === "string") {
+//     return !text.split("").some((v, i, a) => a.lastIndexOf(v) !== i);
+//   } else {
+//     return !text.some((v, i, a) => a.lastIndexOf(v) !== i);
+//   }
+// };
 
 function App() {
   const [greenLetters, setGreenLetters] = useState({
@@ -78,7 +78,7 @@ function App() {
     setGreenLetters({ ...greenLetters, ...newPair });
   };
 
-  const handleYellowLettersChange = (e) => setYellowLetters(e.target.value);
+  // const handleYellowLettersChange = (e) => setYellowLetters(e.target.value);
   const handleGrayLettersChange = (e) => setGrayLetters(e.target.value);
   const handlePositionedYellowChange = (e) => {
     const key = e.target.name;
@@ -105,8 +105,8 @@ function App() {
       );
     };
 
-    const wordContainsYellows = (word: string) =>
-      yellowLetters.split("").every((letter) => word.includes(letter));
+    // const wordContainsYellows = (word: string) =>
+    //   yellowLetters.split("").every((letter) => word.includes(letter));
     const wordDoesNotContainGrays = (word: string) =>
       grayLetters.split("").every((letter) => !word.includes(letter));
 
