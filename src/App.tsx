@@ -136,7 +136,26 @@ function App() {
     <>
       <div className="container">
         <div className="controls">
-          <h1 style={{ textAlign: "center", marginBottom: "50px" }}>cheadle</h1>
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "36px",
+              fontWeight: "bold",
+              marginBottom: "10px",
+            }}
+          >
+            cheadle
+          </p>
+          <p
+            style={{
+              textAlign: "center",
+              marginTop: "0px",
+              marginBottom: "50px",
+              fontStyle: "italic",
+            }}
+          >
+            cheat at wordle!
+          </p>
           <div className="green-letter-wrapper">
             <h2 style={{ color: "green", textAlign: "center" }}>GREEN</h2>
             <div className="green-letters-container">
@@ -180,6 +199,24 @@ function App() {
           <div className="reset-button-container">
             <button onClick={onResetApp}>reset</button>
           </div>
+          <div
+            style={{
+              flexGrow: "1",
+            }}
+          ></div>
+          <p
+            style={{
+              textAlign: "center",
+              fontStyle: "italic",
+              fontSize: "8pt",
+              paddingBottom: "1vh",
+            }}
+          >
+            note: cheadle is not affiliated with renowned actor and golden globe
+            award recipient don cheadle.
+            <br></br>
+            don cheadle does not condone cheating at wordle.
+          </p>
         </div>
         <div
           style={{
